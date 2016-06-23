@@ -16,11 +16,11 @@ app.use(cors({
 // The client should make sure its query values are URI encoded:
 //  - /?url=http%3A%2F%2Fwww.google.com
 //  - /?url=http%3A%2F%2Fjsonplaceholder.typicode.com%2Fcomments%3FpostId%3D1
-app.get("/", function (req, res, next) {
+app.get("/", function (req, res) {
     // Check for "url" query parameter
     if (!req.query.url) {
         res.status(404).send("Bad url in request");
-        next();
+        return;
     }
     // Decode the "url" query value and open a request that points to that
     // location
@@ -28,7 +28,6 @@ app.get("/", function (req, res, next) {
     request(apiUrl)
         .on("error", function (error) {
             res.status(404).send("Error in making API request");
-            next();
         })
         .pipe(res);
 });
