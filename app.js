@@ -6,8 +6,10 @@ const app = express();
 
 // Cross-origin is necessary in order for node to accept requests 
 const corsOptions = {
-    origin: false
+    origin: "https://www.mikewesthad.com"
 };
+
+app.use(cors(corsOptions));
 
 app.get("/", function (req, res, next) {
     if (!req.query.url) {
