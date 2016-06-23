@@ -1,0 +1,27 @@
+{
+  "name": "api-https-to-http-forwarding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikewesthad/api-https-to-http-forwarding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikewesthad/api-https-to-http-forwarding/issues"
+  },
+  "homepage": "https://github.com/mikewesthad/api-https-to-http-forwarding#readme",
+  "dependencies": {
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "request": "^2.72.0"
+  },
+  "engines": {
+    "node": "4.4.5"
+  }
+}
