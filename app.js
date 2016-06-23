@@ -5,7 +5,7 @@ const request = require("request");
 const app = express();
 
 const corsOptions = {
-    origin: "https://www.mikewesthad.com/"
+    origin: "https://www.mikewesthad.com"
 };
 
 app.get("/", cors(corsOptions), function (req, res, next) {
