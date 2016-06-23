@@ -9,7 +9,7 @@ const corsOptions = {
     origin: false
 };
 
-app.get("/", cors(corsOptions), function (req, res, next) {
+app.get("/", function (req, res, next) {
     if (!req.query.url) {
         res.status(404).send("Bad url in request");
         next();
