@@ -15,4 +15,4 @@ Or if you are talking to the Google location API and asking for a JSON file via 
 https://www.demo-url.com?url=https%3A%2F%2Fmaps.googleapis.com%2Fmaps%2Fapi%2Fgeocode%2Fjson%3Faddress%3DChicago
 ```
 
-The CORS options are set [here](https://github.com/mikewesthad/api-https-to-http-forwarding/blob/master/app.js#L9). See the cors node package [documentation](https://github.com/expressjs/cors#configuration-options) for how to change the whitelisted domains.
+The CORS options are set [here](https://github.com/mikewesthad/api-https-to-http-forwarding/blob/master/app.js#L10). See the cors node package [documentation](https://github.com/expressjs/cors#configuration-options) for how to change the whitelisted domains.
