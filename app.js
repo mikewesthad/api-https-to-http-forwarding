@@ -37,5 +37,4 @@ app.all("*", function (req, res) {
     res.status(404).send("Error, unhandled route!");
 });
 
-var port = process.env.PORT || 8080;
-app.listen(port);
+app.listen(process.env.PORT || 8080);
